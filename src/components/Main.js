@@ -30,11 +30,16 @@ class AppComponent extends React.Component {
 
 
   render() {
+    let date=new Date();
+    let dateString=`${date.getHours()}:${date.getMinutes()} ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
     return (
+    <div class="posts">
       <Post postHeader="My Header from Post Component" 
       postParagraph="My paragraph form Post Component" 
       postPhoto="https://www.istockphoto.com/resources/images/PhotoFTLP/img_63351521.jpg"
-      postDate="Actuall date"/>
+      postDate={dateString}/> 
+    </div>
+      
     );
   }
 }
