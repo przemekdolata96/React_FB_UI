@@ -3,6 +3,7 @@ require('styles/App.scss');
 
 import React from 'react';
 import Post from './Post.js';
+import FriendList from './FriendList.js';
 
 class AppComponent extends React.Component {
 	constructor(props){
@@ -38,6 +39,8 @@ class AppComponent extends React.Component {
       postParagraph="My paragraph form Post Component" 
       postPhoto="https://www.istockphoto.com/resources/images/PhotoFTLP/img_63351521.jpg"
       postDate={dateString}/> 
+
+      <FriendList/>
     </div>
       
     );
